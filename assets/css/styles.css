@@ -194,6 +194,7 @@ a#stackoverflow:hover{
 }
 #portfolio ul li{
     float:left;
+    width:287px;
 }
 #portfolio ul li:nth-child(odd) {
     padding:0 14px 0 0;
@@ -202,13 +203,10 @@ a#stackoverflow:hover{
 #portfolio ul li:nth-child(even) {
     padding:0;
 }
-
-#portfolio ul li,
 #portfolio ul li a,
 #portfolio ul li a img,
 .description{
-    width:287px;
-    
+    width:100%;  
 }
 #portfolio ul li a img{
     padding-right: 0;
@@ -251,7 +249,7 @@ footer p{
 	font-size: 12px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) and (min-width:350px) {
     header,
     #headerWrap{
         height:auto;
@@ -276,24 +274,21 @@ footer p{
     }
     section,
     aside{
-	    width:568px;
+	    width:540px;
     }
     section{
         margin-right:0;
         margin-bottom:40px;
     }
-    #portfolio ul li, 
-    #portfolio ul li a, 
-    #portfolio ul li a img,
-    .description {
-        width: 327px;
+    #portfolio ul li{
+        width: 540px;
     }
     #portfolio ul li a{
-        height: 246px;
+        height: 406px;
     }
     #container form input,
     #container form textarea{
-        width:540px;
+        width:518px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -309,10 +304,7 @@ footer p{
         margin-right:0;
         margin-bottom:40px;
     }
-    #portfolio ul li, 
-    #portfolio ul li a, 
-    #portfolio ul li a img,
-    .description {
+    #portfolio ul li{
         width: 327px;
     }
     #portfolio ul li a{
@@ -327,6 +319,9 @@ footer p{
     #headerWrap,
     #container{
 	    width:960px;
+    }
+    #portfolio ul li{
+    width:287px;
     }
     section{
 	    width:588px;
